@@ -3,10 +3,12 @@ require('./helpers/init_mongodb');
 const express = require ('express');
 const studentRoute = require('./routes/studentRoute');
 const courseRoute = require('./routes/courseRoute');
+const userRoute = require('./routes/userRoute');
 const app = express();
 app.use(express.json())
 app.use(studentRoute);
 app.use(courseRoute);
+app.use(userRoute);
 
 
 
